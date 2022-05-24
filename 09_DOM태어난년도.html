@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <p>혜빈이가 태어난 연도는?</p>
+    <input type="text" id="answer" />
+    <button id="send-answer" type="submit">제출</button>
+    <script>
+      // 1. 유저가 답을 맞추면 alert('성공')
+      // 2. 유저가 답을 3번 찍어서 못맞추면 alert('멍청아')
+      // 3. 2번까지는 틀렸으면('땡')
+
+      const answer_btn = document.querySelector("#send-answer");
+      let count = 0;
+
+      answer_btn.addEventListener("click", function () {
+        const answer_value = document.querySelector("#answer").value;
+        count++;
+        if (answer_value == 1997) {
+          alert("정답");
+        } else if (answer_value != 1997 && count < 3) {
+          alert("땡");
+        } else {
+          alert("멍청아");
+        }
+      });
+    </script>
+  </body>
+</html>
