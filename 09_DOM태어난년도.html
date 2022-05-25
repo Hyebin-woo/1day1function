@@ -15,15 +15,31 @@
       // 2. 유저가 답을 3번 찍어서 못맞추면 alert('멍청아')
       // 3. 2번까지는 틀렸으면('땡')
 
+      // const answer_btn = document.querySelector("#send-answer");
+      // let count = 0;
+
+      // answer_btn.addEventListener("click", function () {
+      //   const answer_value = document.querySelector("#answer").value;
+      //   count++;
+      //   if (answer_value == 1997) {
+      //     alert("정답");
+      //   } else if (answer_value != 1997 && count < 3) {
+      //     alert("땡");
+      //   } else {
+      //     alert("멍청아");
+      //   }
+      // });
+
+      // 왜 answer가 이벤트 안에 있어야하는가?
       const answer_btn = document.querySelector("#send-answer");
+      const answer = document.querySelector("#answer");
       let count = 0;
 
       answer_btn.addEventListener("click", function () {
-        const answer_value = document.querySelector("#answer").value;
         count++;
-        if (answer_value == 1997) {
+        if (answer.value == 1997) {
           alert("정답");
-        } else if (answer_value != 1997 && count < 3) {
+        } else if (answer.value != 1997 && count < 3) {
           alert("땡");
         } else {
           alert("멍청아");
