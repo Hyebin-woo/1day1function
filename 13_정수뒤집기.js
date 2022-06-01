@@ -10,4 +10,3 @@ function reverseArr(num) {
 }
 reverseArr(54321);
 
-// toString()  (num+'')

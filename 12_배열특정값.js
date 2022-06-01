@@ -15,6 +15,6 @@ function numCount(num) {
   console.log(count);
 }
 
-//numCount(8);
+numCount(8);
 
 //   (Array(100).fill(1).map((value, index) => value + index) + '').split('8').length-1;
