@@ -17,3 +17,13 @@ function 있니2(name) {
 
 // 있니2("혜빈");
 // 있니2("영희");
+
+function 있니3(name) {
+  출석부.forEach((ele) => {
+    if (ele === name) {
+      console.log("있어요");
+    }
+  });
+}
+
+있니3("철수");
