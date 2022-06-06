@@ -24,6 +24,7 @@ function 있니3(name) {
       console.log("있어요");
     }
   });
+  console.log("없어요");
 }
 
 있니3("철수");
