@@ -28,5 +28,3 @@ const result3 = students.map((student) => student.score);
 // 08. check if there is a student with the score lower than 50
 const result4 = students.some((student) => student.score < 50);
 console.log(result4);
-const result = students.some((student) => student.score < 50);
-console.log(result);
